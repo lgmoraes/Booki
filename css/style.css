@@ -1,0 +1,47 @@
+/*** BASES ***/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #F2F2F2;
+}
+
+
+/*** LAYOUT ***/
+
+.header {
+
+}
+
+.section {
+    
+}
+
+.aside {
+
+}
+
+
+/*** MODULES ***/
+
+
+
+.blue {
+    color: #0065FC;
+}
+.lightBlue {
+    color: #DEEBFF;
+}
+
+
+/*** MEDIA QUERIES ***/
+
+@media (max-width: 992px) {
+	
+}
+@media (max-width: 768px) {
+	
+}
