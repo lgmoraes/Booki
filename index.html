@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5ecce99fc1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">
@@ -15,6 +15,43 @@
     <title>Booki</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header-top">
+            <img class="header-top-logo" src="images/logo/Booki@3x.png" alt="Logo Booki">
+            <ul>
+                <li class="is-active">
+                    <a href="#">Hébergements</a>
+                </li>
+                <li>
+                    <a href="#">Activités</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-title">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+        </div>
+        <form action="" class="header-form">
+            <i class="header-form-icon fas fa-map-marker-alt"></i>
+            <input type="text"
+                class="header-form-input"
+                placeholder="Votre recherche"
+                value="Marseille, France"
+            />
+            <div class="header-form-btn">Rechercher</div>
+        </form>
+        <div class="header-filtre">
+            <p>Filtres</p>
+            <ul>
+                <li><i class="fas fa-money-bill-wave"></i>Économique</li>
+                <li><i class="fas fa-child"></i>Familial</li>
+                <li><i class="fas fa-heart"></i>Romantique</li>
+                <li><i class="fas fa-dog"></i>Animaux</li>
+            </ul>
+        </div>
+        <div class="header-info">
+            <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+    </header>
 </body>
 </html>
