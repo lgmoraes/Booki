@@ -12,14 +12,20 @@ a {
 body {
     width: 992px;
     margin: auto;
-    padding: 0 16px;
+    padding: 0 35px;
 
+    font-size: 13px;
     font-family: 'Raleway', sans-serif;
     background-color: white;
 }
 
 h1 {
-    font-size: 18px;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 10px 0;
 }
 
 ul {
@@ -35,29 +41,7 @@ input:focus {
 }
 
 
-/*** LAYOUT ***/
-
-.header {
-
-}
-
-.section {
-    
-}
-
-.aside {
-
-}
-
-
 /*** MODULES ***/
-
-.blue {
-    color: #0065FC;
-}
-.lightBlue {
-    color: #DEEBFF;
-}
 
 /* Header */
 
@@ -95,19 +79,19 @@ input:focus {
     border-bottom: 2px solid transparent;
 }
 .header-top li a {
-    padding: 20px;
+    padding: 15px;
 }
 
 .header-title {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .header-form {
     display: flex;
 }
 .header-form > * {
-    height: 48px;
-    padding: 0 20px;
+    height: 35px;
+    padding: 0 13px;
 
     font-weight: bold;
 
@@ -116,19 +100,20 @@ input:focus {
     align-items: center;
 }
 .header-form-icon {
-    border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     background-color: #F2F2F2;
 }
 .header-form-input {
+    width: 160px;
     border: 1px solid #F2F2F2;
     border-right: 0;
 }
 .header-form-btn {
     color: white;
     background-color: #0065FC;
-    border-top-right-radius: 18px;
-    border-bottom-right-radius: 18px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     cursor: pointer;
 }
 
@@ -149,13 +134,13 @@ input:focus {
     font-weight: bold;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 20px;
+    column-gap: 17px;
     row-gap: 12px;
     align-items: center;
 }
 .header-filtre ul i {
-    width: 50px;
-    height: 50px;
+    width: 34px;
+    height: 34px;
     border-radius: 25px;
     margin-right: 10px;
 
@@ -166,12 +151,12 @@ input:focus {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -2px; left: -2px;
+    top: -1px; left: -1px;
 }
 .header-filtre ul li {
-    height: 50px;
+    height: 34px;
     padding-right: 20px;
-    border: 2px solid #D9D9D9;
+    border: 1px solid #D9D9D9;
     border-radius: 25px;
 
     cursor: pointer;
@@ -182,17 +167,111 @@ input:focus {
     align-items: center;
 }
 .header-info i {
-    width: 24px;
-    height: 24px;
-    margin-right: 12px;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
     border-radius: 12px;
     border: 1px solid #D9D9D9;
 
     color: #0065FC;
-    font-size: 12px;
+    font-size: 8px;
 
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+
+/*** SECTION HEBERGEMENT MARSEILLE ***/
+
+.section-herbergements_marseille {
+    width: 610px;
+    padding: 28px;
+
+    border-radius: 14px;
+    background-color: #F2F2F2;
+}
+
+.section-herbergements_marseille-cards {
+    padding: 10px 0 25px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 21px;
+}
+
+.card-accommodation {
+    width: 170px;
+    height: 137px;
+    border: 3px solid white;
+    border-radius: 20px;
+    
+    box-shadow: 0 2px 9px rgba(128, 128, 128, .5);
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+}
+.card-accommodation img {
+    height: 78px;
+    object-fit: cover;
+}
+
+.card-accommodation-desc {
+    margin: 0 12px;
+    margin-top: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+.card-accommodation-desc > * {
+    line-height: 15px;
+    margin: 0;
+}
+.card-accommodation-desc h3 {
+    font-size: 10px;
+}
+.card-accommodation-desc p {
+    font-size: 10px;
+}
+.card-accommodation-desc .price {
+    font-weight: bold;
+}
+
+.stars-3, .stars-4, .stars-5 {
+    font-size: 9px;
+    font-family: "Font Awesome 5 Free";
+    letter-spacing: 1px;
+}
+.stars-3::before {
+    content: "";
+    color: #0065FC;
+}
+.stars-3::after {
+    content: "";
+    color: #D9D9D9;
+}
+.stars-4::before {
+    content: "";
+    color: #0065FC;
+}
+.stars-4::after {
+    content: "";
+    color: #D9D9D9;
+}
+.stars-5::before {
+    content: "";
+    color: #0065FC;
+}
+
+.section-herbergements_marseille-afficher_plus {
+    height: 22px;
+
+    font-weight: bold;
+    cursor: pointer;
+    
+    display: inline-flex;
     align-items: center;
 }
 
