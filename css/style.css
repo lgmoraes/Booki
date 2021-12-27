@@ -82,13 +82,9 @@ input:focus {
     display: flex;
 }
 .header-top li {
-
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.header-top li:hover {
-    
 }
 .header-top li.is-active {
     color: #0065FC;
@@ -177,7 +173,12 @@ input:focus {
     border: 1px solid #D9D9D9;
     border-radius: 25px;
 
+    transition: .3s;
     cursor: pointer;
+}
+.header-filtre ul li:hover {
+    color: white;
+    background-color: #0065FC;
 }
 
 .header-info p {
