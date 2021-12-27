@@ -41,6 +41,8 @@ input:focus {
 }
 
 .l-container {
+    margin-bottom: 40px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -217,7 +219,7 @@ input:focus {
     border: 3px solid white;
     border-radius: 20px;
     
-    box-shadow: 0 2px 9px rgba(128, 128, 128, .5);
+    box-shadow: 0 2px 9px rgba(160, 160, 160, .5);
     overflow: hidden;
     
     display: flex;
@@ -320,6 +322,56 @@ input:focus {
     flex-grow: 1;
     display: flex;
     align-items: end;
+}
+
+
+/*** SECTION ACTIVITES MARSEILLE ***/
+
+.section-activites_a_marseille h2 {
+    margin: 20px 0;
+}
+.section-activites_a_marseille-cards {
+    height: 310px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card-activity {
+    width: 208px;
+    height: 135px;
+    
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(180, 180, 180, .5);
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+}
+.card-activity:nth-child(3n+1) {
+    height: 300px;
+}
+.card-activity h3 {
+    height: 38px;
+    padding: 14px;
+    margin: 0;
+
+    font-size: 11px;
+    
+    order: 1;
+    display: flex;
+    align-items: center;
+}
+.card-activity img {
+    /* Corrige la hauteur automatique de l'image */
+    height: 0;
+
+    object-fit: cover;
+
+    flex-grow: 1;
 }
 
 
