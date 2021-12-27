@@ -330,10 +330,10 @@ input:focus {
 
 /*** SECTION ACTIVITES MARSEILLE ***/
 
-.section-activites_a_marseille h2 {
+.section-activites_marseille h2 {
     margin: 20px 0;
 }
-.section-activites_a_marseille-cards {
+.section-activites_marseille-cards {
     height: 310px;
 
     display: flex;
