@@ -10,10 +10,6 @@ a {
 }
 
 body {
-    width: 992px;
-    margin: auto;
-    padding: 0 35px;
-
     font-size: 13px;
     font-family: 'Raleway', sans-serif;
     background-color: white;
@@ -41,6 +37,12 @@ input:focus {
 }
 
 .l-container {
+    width: 992px;
+    margin: auto;
+    padding: 0 35px;
+}
+
+.l-container-hebergements {
     margin-bottom: 40px;
 
     display: flex;
@@ -373,6 +375,17 @@ input:focus {
 
     flex-grow: 1;
 }
+
+
+/*** FOOTER ***/
+
+.footer {
+    height: 150px;
+    margin-top: 40px;
+
+    background-color: #F2F2F2;
+}
+
 
 
 /*** MEDIA QUERIES ***/
