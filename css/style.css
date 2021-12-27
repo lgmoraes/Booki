@@ -40,6 +40,20 @@ input:focus {
     outline: none;
 }
 
+.l-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-herbergements_marseille,
+.aside-les_plus_populaires {
+    padding: 28px;
+
+    border-radius: 14px;
+    background-color: #F2F2F2;
+}
+
 
 /*** MODULES ***/
 
@@ -186,10 +200,6 @@ input:focus {
 
 .section-herbergements_marseille {
     width: 610px;
-    padding: 28px;
-
-    border-radius: 14px;
-    background-color: #F2F2F2;
 }
 
 .section-herbergements_marseille-cards {
@@ -273,6 +283,43 @@ input:focus {
     
     display: inline-flex;
     align-items: center;
+}
+
+
+/*** SECTION HEBERGEMENT MARSEILLE ***/
+
+.aside-les_plus_populaires {
+    width: 280px;
+}
+
+.aside-les_plus_populaires-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.aside-les_plus_populaires .card-accommodation {
+    width: 235px;
+    height: 100px;
+    
+    flex-direction: row;
+}
+.aside-les_plus_populaires .card-accommodation img {
+    width: 88px;
+    height: auto;
+}
+.aside-les_plus_populaires-cards {
+    padding: 10px 0 5px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 21px;
+}
+.aside-les_plus_populaires .card-accommodation [class^="stars"] {
+    flex-grow: 1;
+    display: flex;
+    align-items: end;
 }
 
 
