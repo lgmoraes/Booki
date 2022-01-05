@@ -3,7 +3,8 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+
+    gap: 30px;
 }
 
 .section-herbergements_marseille,
@@ -30,23 +31,30 @@
 /*** SECTION HEBERGEMENT MARSEILLE ***/
 
 .section-herbergements_marseille {
-    width: 610px;
+    flex: 2 1 0;
 }
 
 .section-herbergements_marseille-cards {
     padding: 10px 0 25px;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 21px;
+}
+.section-herbergements_marseille-cards-line {
+    display: flex;
+    gap: 21px;
+}
+.section-herbergements_marseille-cards-line .card-accommodation {
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 .card-accommodation {
-    width: 170px;
-    height: 137px;
-    border: 3px solid white;
-    border-radius: 20px;
+    height: 250px;
+    border: 7px solid white;
+    border-radius: 40px;
     
     box-shadow: 0 2px 9px rgba(160, 160, 160, .5);
     overflow: hidden;
@@ -55,13 +63,13 @@
     flex-direction: column;
 }
 .card-accommodation img {
-    height: 78px;
+    height: 140px;
     object-fit: cover;
 }
 
 .card-accommodation-desc {
-    padding: 0 12px;
-    padding-top: 5px;
+    padding: 13px;
+    padding-top: 10px;
 
     background-color: white;
 
@@ -71,23 +79,25 @@
     flex-grow: 1;
 }
 .card-accommodation-desc > * {
-    line-height: 15px;
+    line-height: 17px;
     margin: 0;
 }
 .card-accommodation-desc h3 {
-    font-size: 10px;
+    font-size: 16px;
+    line-height: 20px;
 }
 .card-accommodation-desc p {
-    font-size: 10px;
+    font-size: 16px;
+    margin: 12px 0;
 }
 .card-accommodation-desc .price {
     font-weight: bold;
 }
 
 .stars-3, .stars-4, .stars-5 {
-    font-size: 9px;
+    font-size: 18px;
     font-family: "Font Awesome 5 Free";
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 .stars-3::before {
     content: "";
@@ -124,7 +134,7 @@
 /*** SECTION LES PLUS POPULAIRES ***/
 
 .aside-les_plus_populaires {
-    width: 280px;
+    flex: 1 1 0;
 }
 
 .aside-les_plus_populaires-top {
@@ -133,20 +143,23 @@
     justify-content: space-between;
     align-items: center;
 }
+.aside-les_plus_populaires-top i {
+    font-size: 22px;
+}
 .aside-les_plus_populaires .card-accommodation {
-    width: 235px;
-    height: 100px;
+    height: 180px;
     
     flex-direction: row;
 }
 .aside-les_plus_populaires .card-accommodation img {
-    width: 88px;
+    width: 160px;
     height: auto;
 }
 .aside-les_plus_populaires-cards {
     padding: 10px 0 5px;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     gap: 21px;
@@ -164,7 +177,7 @@
     margin: 20px 0;
 }
 .section-activites_marseille-cards {
-    height: 310px;
+    height: 500px;
 
     display: flex;
     flex-direction: column;
@@ -173,8 +186,7 @@
 }
 
 .card-activity {
-    width: 208px;
-    height: 135px;
+    height: 235px;
     
     border-radius: 14px;
     overflow: hidden;
@@ -185,20 +197,25 @@
     flex-direction: column;
 }
 .card-activity:nth-child(3n+1) {
-    height: 300px;
+    height: 500px;
 }
 .card-activity h3 {
-    height: 38px;
-    padding: 14px;
+    height: 70px;
+    padding: 30px;
     margin: 0;
 
-    font-size: 11px;
+    font-size: 18px;
     background-color: white;
 
     z-index: 1;
     order: 1;
     display: flex;
     align-items: center;
+}
+.card-activity h3 span {
+    /* Permet des tailles de colonnes homogènes */
+    width: 0;
+    white-space: nowrap;
 }
 .card-activity img {
     /* Corrige la hauteur automatique de l'image */
@@ -213,7 +230,16 @@
 /*** MEDIA QUERIES ***/
 
 @media (max-width: 992px) {
-	
+    .section-herbergements_marseille-cards-line {
+        flex-direction: column;
+    }
+    .section-herbergements_marseille-cards-line .card-accommodation {
+        flex-basis: auto;
+    }
+
+	.section-activites_marseille-cards {
+        height: 1030px;
+    }
 }
 @media (max-width: 768px) {
     .l-container-hebergements {
@@ -260,6 +286,6 @@
         width: auto;
     }
     .card-activity:nth-child(3n+1) {
-        height: 135px;
+        height: 250px;
     }
 }
