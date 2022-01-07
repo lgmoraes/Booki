@@ -12,7 +12,8 @@
     margin: auto;
     padding: 0 35px;
 
-    line-height: 20px;
+    line-height: 37px;
+    font-size: 18px;
 
     display: flex;
     justify-content: space-between;
@@ -37,5 +38,8 @@
         padding: 0 35px;
 
         flex-direction: column;
+    }
+    .footer-links-col {
+        padding-bottom: 25px;
     }
 }
