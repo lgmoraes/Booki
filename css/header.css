@@ -130,7 +130,7 @@
 
 .header-info p {
     display: flex;
-    align-items: top;
+    align-items: flex-start;
 }
 .header-info i {
     width: 23px;
